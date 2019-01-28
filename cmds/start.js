@@ -81,7 +81,7 @@ let last3 = new Discord.RichEmbed()
         editLast3= await message.channel.send({embed: last3});
     }, 10);
     
-    const collector =snipeChannel.createMessageCollector(filter, {time: 300000});
+    const collector =snipeChannel.createMessageCollector(filter, {time: 140000});
 	snipeChannel.overwritePermissions(
         scrimmers,
         { "SEND_MESSAGES": true}
