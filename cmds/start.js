@@ -2,6 +2,7 @@ const Discord = require ('discord.js');
 const Listing = require ('./../modules/Listing');
 const fs = require('fs');
 const settings = require('./../settings.json');
+const owner = settings.owner;
 
 module.exports.run = async (bot, message, args) => {
    let roles = message.guild.roles;
